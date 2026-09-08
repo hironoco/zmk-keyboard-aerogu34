@@ -70,7 +70,10 @@
     volume_control {
         /* Keybind order is: right, left, down, up. */
         layers = <3>;
-        input-processors = <&zip_keybind_volume>;
+        /* Convert movement to volume keys first, then zero the relative
+         * event so it cannot reach the normal mouse-pointer path. */
+        input-processors = <&zip_keybind_volume
+                            &zip_xy_scaler 0 1>;
     };
 
     scroller {
@@ -88,9 +91,9 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        /* Right raises volume, left lowers it; vertical movement is ignored. */
-        bindings = <&kp C_VOL_UP>,
-                   <&kp C_VOL_DN>,
+        /* Sensor X is inverted: right raises volume, left lowers it. */
+        bindings = <&kp C_VOL_DN>,
+                   <&kp C_VOL_UP>,
                    <&none>,
                    <&none>;
         tick = <30>;
