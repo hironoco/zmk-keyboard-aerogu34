@@ -23,16 +23,6 @@
  * console, so drop the node. */
 &board_cdc_acm_uart { status = "disabled"; };
 
-&scroll_runtime_input_processor {
-    processor-label = "rscroll";
-    x-codes = <INPUT_REL_X>;
-    y-codes = <INPUT_REL_Y>;
-    xy-to-scroll-enabled;
-    active-layers = <16>; /* BIT(4) = layer 4 (Scroll) */
-    axis-snap-mode = <AXIS_SNAP_MODE_Y>;
-    axis-snap-threshold = <200>;
-};
-
 / {
     deadzone_processor: deadzone_processor {
         compatible = "zmk,input-processor-deadzone";
@@ -79,7 +69,7 @@
 
 &trackball_listener {
     scroller {
-        layers = <SCROLL>;
+        layers = <5>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             //スクロール方向を逆転,,,,,,,,,,,,,,
