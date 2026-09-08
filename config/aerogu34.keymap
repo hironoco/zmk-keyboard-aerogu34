@@ -66,6 +66,7 @@
         };
 
         function_layer2 {
+            display-name = "Function2";
             bindings = <
 &trans     &kp QMARK  &kp LT     &kp GT     &trans     &trans  &trans    &trans         &trans    &trans
 &kp DQT    &kp DOT    &kp LBRC   &kp RBRC   &kp TILDE  &trans  &kp HOME  &trans         &kp END   &trans
