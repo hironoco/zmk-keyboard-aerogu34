@@ -49,9 +49,9 @@
             display-name = "Default";
             bindings = <
 &kp ESC      &kp Q             &kp U  &kp L  &kp LEFT_WIN  &kp F            &kp W        &kp R  &kp Y  &kp P
-&kp E        &kp I             &kp A  &kp O  &kp LEFT_ALT  &kp K            &kp T        &kp N  &kp S  &lt 3 H
+&kp E        &kp I             &kp A  &kp O  &kp LEFT_ALT  &kp K            &kp T        &kp N  &kp S  &lt 5 H
 &kp Z        &kp X             &kp C  &kp V  &kp LCTRL     &kp G            &kp D        &kp M  &kp J  &kp B
-&lt 4 SPACE  &mt LSHIFT LANG2                              &mt RSHFT LANG1  &lt 1 ENTER
+&lt 3 SPACE  &mt LSHIFT LANG2                              &mt RSHFT LANG1  &lt 1 ENTER
             >;
         };
 
@@ -61,7 +61,7 @@
 &trans     &kp EXCL   &kp LPAR   &kp RPAR  &trans     &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DEL          &trans
 &kp SQT    &kp COMMA  &kp LBKT   &kp RBKT  &kp UNDER  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp AT
 &kp GRAVE  &kp SEMI   &kp MINUS  &kp PLUS  &trans     &trans  &kp AMPERSAND   &kp FSLH        &kp DLLR         &kp PERCENT
-&lt 4 TAB  &trans                                     &trans  &trans
+&lt 2 TAB  &trans                                     &trans  &trans
             >;
         };
 
@@ -96,6 +96,7 @@
 
         /* Scroll must be above the auto-enabled Mouse layer so AML never
          * masks trackball scrolling while this layer is held. */
+
         scroll_layer {
             display-name = "Scroll";
             bindings = <
