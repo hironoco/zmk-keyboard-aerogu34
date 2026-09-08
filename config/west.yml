@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: prospector
       url-base: https://github.com/t-ogura
+    - name: zettaface
+      url-base: https://github.com/zettaface
   projects:
     # ZMK: cormoran fork, main+dya = ZMK main (Zephyr 4.1) base with DYA Studio RPC
     - name: zmk
@@ -64,6 +66,9 @@ manifest:
     # Deadzone input processor
     - name: zmk-input-processor-deadzone
       remote: prospector
+    # Relative trackball motion -> discrete key bindings (volume control)
+    - name: zmk-input-processor-keybind
+      remote: zettaface
     # Prospector
     - name: prospector-zmk-module
       remote: prospector
