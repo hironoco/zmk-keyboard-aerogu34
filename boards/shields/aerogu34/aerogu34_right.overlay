@@ -43,9 +43,7 @@
          *   scroll_runtime - convert XY -> scroll on layer 4 only */
         input-processors = <&deadzone_processor
                             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-                            &mouse_runtime_input_processor
-                            &zip_temp_layer 4 800
-                            &scroll_runtime_input_processor>;
+                            &zip_temp_layer 4 800>;
     };
 };
 
@@ -61,19 +59,20 @@
         /* Boot-time sensor CPI (counts per inch). Valid range 608-4826 in
          * steps of 38; driver rounds down. 800 maps to 21*38 = 798.
          * DYA Studio's runtime-input-processor can override at runtime. */
-        res-cpi = <800>;
+        res-cpi = <1360>;
     };
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 5 800>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 800>; };
 
 &trackball_listener {
     scroller {
         layers = <5>;
         input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
             //スクロール方向を逆転,,,,,,,,,,,,,,
-            <&zip_xy_to_scroll_mapper>;
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 8>;
     };
 };
 
