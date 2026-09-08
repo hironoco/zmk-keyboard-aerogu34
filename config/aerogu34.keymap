@@ -40,52 +40,7 @@
 &lt { quick-tap-ms = <300>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
-
-        stab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        btreset {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 4>;
-            layers = <4>;
-        };
-
-        boot {
-            bindings = <&bootloader>;
-            key-positions = <1 2 3>;
-            layers = <4>;
-        };
-
-        lwin {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <20 21>;
-        };
-
-        lalt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <20 22>;
-        };
-
-        rwin {
-            bindings = <&kp RIGHT_WIN>;
-            key-positions = <29 28>;
-        };
-
-        ralt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <29 27>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
