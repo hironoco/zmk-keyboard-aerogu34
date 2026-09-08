@@ -1,0 +1,212 @@
+layout: {zmk_keyboard: aerogu34}
+layers:
+  Default:
+  - ESC
+  - Q
+  - U
+  - L
+  - LEFT WIN
+  - F
+  - W
+  - R
+  - Y
+  - P
+  - E
+  - I
+  - A
+  - O
+  - LEFT ALT
+  - K
+  - T
+  - N
+  - S
+  - {t: H, h: Scroll}
+  - Z
+  - X
+  - C
+  - V
+  - LCTRL
+  - G
+  - D
+  - M
+  - J
+  - B
+  - {t: SPACE, h: Number}
+  - {t: LANG2, h: LSHIFT}
+  - {t: LANG1, h: RSHFT}
+  - {t: ENTER, h: Function}
+  Function:
+  - {t: ▽, type: trans}
+  - '!'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - UP ARROW
+  - DEL
+  - {t: ▽, type: trans}
+  - ''''
+  - ','
+  - '['
+  - ']'
+  - _
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - '@'
+  - '`'
+  - ;
+  - '-'
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&'
+  - /
+  - $
+  - '%'
+  - {t: TAB, h: Function2}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  Function2:
+  - {t: ▽, type: trans}
+  - '?'
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '"'
+  - .
+  - '{'
+  - '}'
+  - '~'
+  - {t: ▽, type: trans}
+  - HOME
+  - {t: ▽, type: trans}
+  - END
+  - {t: ▽, type: trans}
+  - ^
+  - ':'
+  - '='
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '|'
+  - \
+  - '#'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  Number:
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F12
+  - F11
+  - F10
+  - F9
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F8
+  - F7
+  - F6
+  - F5
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F3
+  - F2
+  - F1
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Scroll:
+  - '&studio_unlock'
+  - BT CLR ALL
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
