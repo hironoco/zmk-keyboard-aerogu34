@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/t-ogura
     - name: zettaface
       url-base: https://github.com/zettaface
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     # ZMK: cormoran fork, main+dya = ZMK main (Zephyr 4.1) base with DYA Studio RPC
     - name: zmk
@@ -74,5 +76,8 @@ manifest:
       remote: prospector
       revision: main
       path: modules/prospector-zmk-module
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config

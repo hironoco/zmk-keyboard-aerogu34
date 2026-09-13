@@ -56,6 +56,12 @@ jobs:
           west init -l config
           west update --narrow
           west zephyr-export
+          # Preserve ZMK_INPUT_PROC_STOP returned by a layer-specific input
+          # processor. This prevents the layer-3 volume processor's relative
+          # trackball events from falling through to mouse movement.
+          if grep -A1 'if (!override->process_next)' zmk/app/src/pointing/input_listener.c | grep -q 'return 0;'; then
+            patch -d zmk -p1 < "${GITHUB_WORKSPACE}/config/patches/input-listener-return-status.patch"
+          fi
 
       - name: Build firmware
         run: |
